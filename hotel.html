@@ -1,1 +1,100 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resturant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <h1 class="logo">Resturant</h1>
+      <p class="tagline">Fresh • Tasty • Fast</p>
+      <button id="scrollMenuBtn" class="btn primary">View Menu</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section" id="menu">
+      <h2>Menu</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Pizza</h3>
+          <p>Cheesy & hot</p>
+          <div class="row">
+            <span class="price">₹199</span>
+            <button class="btn add" data-item="Pizza">Add</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Burger</h3>
+          <p>Juicy & crispy</p>
+          <div class="row">
+            <span class="price">₹149</span>
+            <button class="btn add" data-item="Burger">Add</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Pepsi</h3>
+          <p>Chilled drink</p>
+          <div class="row">
+            <span class="price">₹49</span>
+            <button class="btn add" data-item="Pepsi">Add</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Fried Chicken</h3>
+          <p>Crunchy bites</p>
+          <div class="row">
+            <span class="price">₹229</span>
+            <button class="btn add" data-item="Fried Chicken">Add</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Prawns</h3>
+          <p>Spicy prawns</p>
+          <div class="row">
+            <span class="price">₹279</span>
+            <button class="btn add" data-item="Prawns">Add</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Momos</h3>
+          <p>Steamed & yummy</p>
+          <div class="row">
+            <span class="price">₹99</span>
+            <button class="btn add" data-item="Momos">Add</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cart">
+      <h2>Your Order</h2>
+
+      <div class="cartBox">
+        <p id="emptyText">No items added yet.</p>
+        <ul id="cartList"></ul>
+
+        <div class="cartActions">
+          <button id="clearBtn" class="btn danger">Clear</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Resturant • Order & enjoy 😋</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
